@@ -37,10 +37,14 @@ h1, h2, h3, p { margin: 0; }
   padding: 12px 18px;
   color: var(--cream);
   background: var(--forest);
+  opacity: 0;
   transform: translateY(-150%);
 }
 
-.skip-link:focus { transform: translateY(0); }
+.skip-link:focus {
+  opacity: 1;
+  transform: translateY(0);
+}
 
 .masthead, .masthead nav, .wordmark {
   display: flex;
